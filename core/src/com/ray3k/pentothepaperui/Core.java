@@ -73,6 +73,8 @@ public class Core extends ApplicationAdapter {
             }
         };
         
+        skin.get("signature", BitmapFont.class).getData().ascent = 15;
+        
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
         
